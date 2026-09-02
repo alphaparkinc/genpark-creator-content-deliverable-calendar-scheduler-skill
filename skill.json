@@ -1,0 +1,39 @@
+{
+  "name": "genpark-creator-content-deliverable-calendar-scheduler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Creator content deliverable calendar scheduler coordinating cross-platform post embargoes, optimal posting windows, and launch waves.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "influencer-planning",
+  "tags": [
+    "content-calendar",
+    "deliverable-scheduler",
+    "embargo-enforcement",
+    "campaign-waves",
+    "influencer-operations"
+  ],
+  "inputs": {
+    "campaign_name": {
+      "type": "string"
+    },
+    "creator_commitments": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "calendar_schedule_id": {
+      "type": "string"
+    },
+    "campaign_name": {
+      "type": "string"
+    },
+    "total_scheduled_posts_count": {
+      "type": "integer"
+    },
+    "interactive_content_calendar_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
